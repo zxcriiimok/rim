@@ -1,0 +1,10 @@
+text = input("Введите текст для шифрования: ")
+new_text = ""
+
+for ch in text:
+    code = ord(ch)
+    new_code = code - 10
+    new_ch = chr(new_code)
+    new_text += new_ch
+    
+print("Зашифрованный текст:", new_text)
